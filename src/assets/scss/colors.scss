@@ -1,0 +1,49 @@
+:root {
+  /* Primary Colors */
+  // --primary-color: green;
+  --primary-color: #4969fc;
+  --primary-hover: #3f57bf;
+  --primary-active: #4338ca;
+  --primary-light-1: #b6c3fe;
+  --primary-light-2: #c8d2fe;
+  --primary-light-3: #dbe1fe;
+  --primary-light-4: #edf0ff;
+  --default-filter: invert(48%) sepia(11%) saturate(752%) hue-rotate(173deg) brightness(89%) contrast(83%);
+  --active-filter: invert(40%) sepia(61%) saturate(5222%) hue-rotate(222deg) brightness(102%) contrast(98%);
+  --white-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7465%) hue-rotate(313deg) brightness(105%) contrast(101%);
+
+  /* Text Colors */
+  --title-active: #292d32;
+  --body-text: #667485;
+  --label-text: #8092a8;
+  --placeholder-text: #8fa4bd;
+  --primary-btn-text: white;
+  --secondary-btn-text: var(--primary-color);
+
+  /* Feedback Colors */
+  --color-success: #00ba88;
+  --color-warning: #ffb800;
+  --color-error: #ff522c;
+
+  /* Helper Colors */
+  --white: white;
+  --black: black;
+  --line-color: #dde4eb;
+  --input-bg: #f2f2f2;
+  --search-bg: #ecf1ff;
+  --maskbg: #000000b0;
+
+  /* Card Colors */
+  // --page-bg: #b9b9b9;
+  --page-bg: #f7f7f7;
+  --loading-bg: #f0f0f070;
+  --card-bg: white;
+
+  --primary-color-filter: invert(34%) sepia(93%) saturate(1814%) hue-rotate(218deg) brightness(96%) contrast(105%);
+  --label-text-filter: invert(59%) sepia(13%) saturate(588%) hue-rotate(173deg) brightness(95%) contrast(86%);
+  --placeholder-text-filter: invert(71%) sepia(5%) saturate(1480%) hue-rotate(173deg) brightness(92%) contrast(83%);
+  --color-success-filter: invert(43%) sepia(94%) saturate(1054%) hue-rotate(130deg) brightness(96%) contrast(101%);
+  --color-warning-filter: invert(74%) sepia(52%) saturate(2291%) hue-rotate(358deg) brightness(102%) contrast(105%);
+  --color-error-filter: invert(73%) sepia(82%) saturate(6806%) hue-rotate(344deg) brightness(105%) contrast(101%);
+  --primary-color-filter-down: invert(74%) sepia(61%) saturate(5222%) hue-rotate(222deg) brightness(102%) contrast(98%);
+}

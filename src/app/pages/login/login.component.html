@@ -1,0 +1,24 @@
+<div class="parent flex f-center w-100 h-100">
+  <div class="login-card flex f-center">
+    <form class="form-fields flex f-center w-100" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="welcome flex-center font-title-lg">Hoşgeldiniz</div>
+
+      <div class="w-100">
+        <label class="block font-label-lg">E-Posta</label>
+        <input pInputText formControlName="email" class="w-100" type="text" placeholder="E-Posta" />
+        <div class="p-error block font-label-md" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.dirty">Kullanıcı adı gereklidir.</div>
+      </div>
+
+      <div class="w-100">
+        <div>
+          <label class="block font-label-lg">Şifre</label>
+          <p-password formControlName="password" placeholder="Şifre" [toggleMask]="true" [feedback]="false"></p-password>
+          <div class="p-error block font-label-md" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.dirty">Şifre gereklidir.</div>
+        </div>
+        <a class="forgot-pwd font-label-md">Şifremi unuttum</a>
+      </div>
+
+      <button pButton class="login-button w-100" type="submit">Giriş Yap</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+.p-component {
+  font-family: var(--font-family);
+}
+
+.p-inputtext {
+  /* Normal durum */
+  border: 1px solid transparent; // ya da direkt var(--line-color)
+  box-sizing: border-box; // her ihtimale karşı
+  transition: border-color 0.2s; // yumuşak geçiş isterseniz
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  /* Diğer stiller */
+}
+
+.p-inputtext:enabled:hover {
+  /* Hover durumunda da aynı kalabilir veya renklendirebilirsiniz */
+  border-color: var(--line-color);
+}
+
+.p-inputtext:enabled:focus {
+  /* Focus durumunda border veya outline kullanabilirsiniz */
+  border-color: var(--line-color);
+  outline: none; // İsterseniz outline tamamen kapatılabilir
+}
+
+.p-inputtext.ng-dirty.ng-invalid {
+  outline: 1px solid var(--color-error);
+}
+
+// pInputText
+.p-inputtext.ng-invalid.ng-touched {
+  border: 1px solid var(--color-error);
+}
+
+// pPassword
+p-password.ng-invalid.ng-touched .p-inputtext {
+  border: 1px solid var(--color-error) !important;
+}
+
+/* pError */
+.p-error {
+  color: var(--color-error);
+}
+
+/* pPassword */
+p-password.ng-invalid.ng-dirty > .p-password > .p-inputtext {
+  outline: 1px solid var(--color-error);
+}
+
+/* pButton */
+.p-button {
+  @extend .font-button-lg;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-btn-text);
+  background: var(--primary-color);
+  border: unset;
+  padding: 0.5rem 4rem;
+  transition: all var(--transition-duration) ease-in-out;
+  border-radius: 1rem;
+}
+
+.p-button:enabled:hover {
+  background: var(--primary-hover);
+}
+
+.p-button:enabled:active {
+  background: var(--primary-active);
+}
+
+.p-button:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--primary-color), 0 1px 2px 0 black;
+  background-color: var(--primary-color);
+  outline: 0.25rem solid var(--primary-light-3);
+}

@@ -1,0 +1,9 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start"> </ng-template>
+
+  <ng-template pTemplate="end">
+    <button pButton type="button" label="Çıkış Yap" icon="pi pi-sign-out" (click)="logout()"></button>
+  </ng-template>
+</p-menubar>
+
+<router-outlet></router-outlet>

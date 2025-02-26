@@ -1,0 +1,36 @@
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.f-start {
+  align-self: flex-start;
+}
+
+.f-end {
+  align-self: flex-end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}

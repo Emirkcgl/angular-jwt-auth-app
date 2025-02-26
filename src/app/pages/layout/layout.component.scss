@@ -1,0 +1,9 @@
+.menubar-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+:host ::ng-deep .p-menubar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
