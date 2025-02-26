@@ -15,9 +15,7 @@ export class DashboardComponent {
 
   loadUsers() {
     this.authService.loadUsers().subscribe(res => {
-      console.log(res);
       this.users = res.data;
-      console.log('kullanıcılar', this.users);
     });
   }
 }

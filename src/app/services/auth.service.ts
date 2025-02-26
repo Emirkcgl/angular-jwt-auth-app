@@ -15,7 +15,6 @@ export class AuthService {
 
   login(email: string, password: string): Observable<any> {
     const body = { emailId: email, Password: password };
-    console.log(`${this.API_URL}/login`);
 
     return this.http.post<any>(`${this.API_URL}/login`, body).pipe(
       tap(res => {
@@ -32,6 +31,11 @@ export class AuthService {
 
   isAuthenticatedUser(): boolean {
     return !!localStorage.getItem('loginToken');
+  }
+
+  getToken(): string | null {
+    const token = localStorage.getItem('loginToken');
+    return token ? atob(token) : null;
   }
 
   logout() {
