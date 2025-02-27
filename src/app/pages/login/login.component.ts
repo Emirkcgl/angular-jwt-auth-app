@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       next: (res: any) => {
         if (res && res.data?.token) {
           this.messageService.add({ severity: 'success', summary: 'Başarılı', detail: 'Giriş başarılı!' });
-          localStorage.setItem('loginToken', btoa(res.data.token));
+
           this.router.navigateByUrl('/dashboard');
         } else {
           this.messageService.add({ severity: 'error', summary: 'Hata', detail: 'e-posta veya şifre hatalı!' });
